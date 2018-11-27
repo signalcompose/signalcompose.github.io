@@ -6,7 +6,7 @@
   {% assign content_filename  = collection.slug %}
   {% assign content_image = include.prefix | append : "/images/" | append : content_filename | append : "." | append : collection.image_ext %}
 
-<div class="col-24 col-md-12 col-lg-8">
+  <div class="col-24 col-md-8 col-lg-6">
   <div class="card">
     <a href="{{collection.url}}">
       <img class="card-img-top" src="{{content_image}}" class="img-object-fit"> 
