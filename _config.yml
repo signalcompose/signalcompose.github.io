@@ -40,7 +40,6 @@ sass :
 exclude:
   - vendor
   - Submodules
-  - .bundle
 
 
 # collection

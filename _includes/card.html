@@ -7,14 +7,14 @@
   {% assign content_image = include.prefix | append : "/images/" | append : content_filename | append : "." | append : collection.image_ext %}
 
 <div class="col-24 col-md-12 col-lg-8">
-  <a href="{{collection.url}}">
-    <div class="card">
+  <div class="card">
+    <a href="{{collection.url}}">
       <img class="card-img-top" src="{{content_image}}" class="img-object-fit"> 
       <div class="card-body"> 
         <h3 class="card-title"> {{collection.title}} </h3>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>
 
 {% endfor %}
