@@ -1,0 +1,53 @@
+---
+---
+
+
+$signal-scarlet : #FF0A00
+$compose-gray   : #2B2323
+$na-white       : #ffffff
+
+$body-bg    : #faf8f8
+$body-color : #343a40
+
+$spacer : 1rem
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+
+
+//$headings-line-height   : 1.5
+$headings-margin-top    : $spacer * 2
+$headings-margin-bottom : $spacer * 2
+
+$grid-breakpoints : (xs : 0, sm : 576px, md : 768px, lg : 992px, xl : 1200px, xxl : 1420px)
+
+$container-max-widths : ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1400px )
+
+$grid-columns : 24
+
+
+@import "bootstrap/bootstrap"
+
+#head-title
+  background-color : $compose-gray
+  width            : 100%
+  position         : fixed
+  z-index          : 1030
+
+.bg-na-white
+  background-color : $na-white
+
+#body
+  padding-top : 8rem
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+  margin-top       : $headings-margin-top
+
+
+#head-title
+  h1
+    margin-top    : map-get($spacers, 2)
+    margin-bottom : map-get($spacers, 2)
+
+.img-object-fit
+  object-fit : cover
