@@ -6,4 +6,6 @@ layout     : page
 
 ## {{page.title}}
 
+Ryo Morita
+
 IAMAS M1。音大作曲科上がりのガムランプレイヤー。
