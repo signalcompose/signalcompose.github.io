@@ -1,6 +1,6 @@
 ---
 title      : "mrt(ry"
-image_ext  : pnp
+image_ext  : png
 layout     : page
 ---
 
