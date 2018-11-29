@@ -1,5 +1,5 @@
 ---
-title      : Keymap : Symbolic
+title      : "Keymap : Symbolic"
 image_ext  : jpg
 layout     : page
 ---
