@@ -1,6 +1,6 @@
 ---
 title      : モジュラーシンセケース
-image_ext  : jpg
+image_ext  : jpeg
 layout     : page
 ---
 

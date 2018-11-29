@@ -1,6 +1,6 @@
 ---
 title      : PROTO-01 WAIL
-image_ext  : jpeg
+image_ext  : jpg
 layout     : page
 ---
 
