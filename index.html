@@ -3,13 +3,15 @@ layout: base
 title : signalcompose
 ---
 
-<div class="container" id="body"> 
+<div class="container" id="body">
   <div class="row">
-    <div class="col-23 offset-1"> 
+    <div class="col-23 offset-1">
       <div class="col-24">
         <p>
           signal compose は、パートナーの専門的技術、知識、独創性によって駆動するクリエイティブチームです。
           音楽／映像／ソフトウェア／ハードウェアといった各々の感興から、世界をちょっとずつ豊かにしていきます。
+
+          お問い合わせは info[at]signalcompose.com まで。
         </p>
       </div>
 
@@ -19,7 +21,7 @@ title : signalcompose
 
 
       <div class="col-24">
-        <dl class="row"> 
+        <dl class="row">
           {% for post in site.posts limit:5 %}
           <dt class="col-12 col-md-6 col-lg-3"> {{ post.date | date_to_string }}</dt>
           <dd class="col-12 col-md-18 col-lg-21"> <a href="{{ post.url }}">{{ post.title }}</a> </dd>
