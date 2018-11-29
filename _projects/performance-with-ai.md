@@ -1,5 +1,5 @@
 ---
-title      : AIを利用したパフォーマンス向けデバイス開発
+title      : RNNによるパフォーマンスデバイス
 image_ext  : jpg
 layout     : page
 ---
