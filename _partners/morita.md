@@ -1,5 +1,5 @@
 ---
-title      : "mrt(ry"
+title      : "森田 了"
 image_ext  : png
 layout     : page
 ---
