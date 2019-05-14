@@ -580,6 +580,7 @@ header.masthead .intro-text .intro-heading {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
+  text-align: left;
 }
 
 .team-member h6 {
@@ -594,6 +595,16 @@ header.masthead .intro-text .intro-heading {
 
 .team-member p {
   margin-top: 0;
+  text-align: left;
+}
+
+.team-member ul {
+  text-align: right;
+  /* 全然書き方がわからん！！！！！！！終了！！！！！！！！！ */
+  /*a:link {color:#4f4946 !important;} /*未訪問のリンクの色*/
+  /*a:visited {color:#4f4946 !important;} /*訪問済みのリンクの色*/
+  /*a:hover {color:#e73f4b !important;} /*カーソルが乗っているリンクの色 background:#0000cc; */
+  /*a:active {color:#d81b29 !important;} /*クリック中のリンクの色 */
 }
 
 #team .team-item {
