@@ -319,6 +319,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content p {
+  margin-top: 30px;/* なぜmarginを作れないの………… */
   margin-bottom: 30px;
 }
 
@@ -333,6 +334,13 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0;
   margin-bottom: 30px;
 }
+
+
+/* なぜmarginを作れないの………… */
+/* .portfolio-modal .modal-content iframe{
+  margin-bottom: 30px;
+} */
+
 
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
@@ -589,6 +597,7 @@ header.masthead .intro-text .intro-heading {
   font-size: 14.6px;
   font-weight: normal;
   text-align: justify;
+  /* ここjustiftyだとページサイズ変えた時に崩れるんだが、イラレのようなjustyfyとleftの併用はできないのか？ */
 
   text-transform: none;
 }
