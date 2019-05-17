@@ -304,6 +304,7 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-dialog {
   margin: 10rem auto;
+  /* ここ変えたらトップのマージン変わるかな？？？ */
   min-width: 400px;
   max-width: 50vw;
 }
@@ -319,7 +320,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content p {
-  margin-top: 30px;/* なぜmarginを作れないの………… */
+  margin-top: 30px;/* なぜmarginを作れないの…………下に同じですね */
   margin-bottom: 30px;
 }
 
@@ -336,7 +337,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 
-/* なぜmarginを作れないの………… */
+/* なぜmarginを作れないの…………それはここに.embed-responsiveの設定がないからです、bootstrap.cssにゆけ */
 /* .portfolio-modal .modal-content iframe{
   margin-bottom: 30px;
 } */
