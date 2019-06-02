@@ -1,50 +1,20 @@
 ---
-layout: base
-title : signalcompose
+layout: default
 ---
 
-<div class="container" id="body">
-  <div class="row">
-    <div class="col-23 offset-1">
-      <div class="col-24">
-        <h2>
-          Signal Compose は、パートナーの専門的技術、知識、独創性によって駆動するクリエイティブチームです。<br />
-          音楽／映像／ソフトウェア／ハードウェアといった各々の感興から、世界をちょっとずつ豊かにしていきます。
-        </h2>
-        <p>
-          <li><a href="/about/">会社情報はこちら</a></li>
-          <li>お問い合わせは info[at]signalcompose.com まで。</li>
-        </p>
-      </div>
+<div class="home">
 
-      <div class="col-24">
-        <h2> News </h2>
-      </div>
+  <h1>Posts</h1>
 
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-      <div class="col-24">
-        <dl class="row">
-          {% for post in site.posts limit:5 %}
-          <dt class="col-12 col-md-6 col-lg-3"> {{ post.date | date_to_string }}</dt>
-          <dd class="col-12 col-md-18 col-lg-21"> <a href="{{ post.url }}">{{ post.title }}</a> </dd>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="col-24">
-        <h2> Projects </h2>
-      </div>
-
-
-      {% include card.html collections = site.projects prefix = "projects" %}
-
-      <div class="col-24">
-        <h2> Partner </h2>
-      </div>
-
-      {% include card.html collections = site.partners prefix = "partners" %}
-
-    </div>
-  </div>
 </div>
