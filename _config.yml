@@ -5,7 +5,9 @@ author: ''
 sass:
   style: compressed
 
-assets_path: '' 
+assets_path: ''
 
 collections:
   projects:
+
+theme: jekyll-theme-startbootstrap-agency
