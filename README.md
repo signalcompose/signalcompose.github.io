@@ -68,7 +68,7 @@ author: [The author of the website]
 sass: # Enables the conversion of css/agency.min.scss to  css/agency.min.css
   style: compressed # Minify css/agency.min.css
 
-collections: # Enables additional data structures 
+collections: # Enables additional data structures
   projects: # Enables _projects
 ```
 `assets/css/`
@@ -106,7 +106,7 @@ copyright: [Copyright notice]
 
 social-buttons: # Footer social buttons
   - icon: [Font awesome icon code]
-    url: '[Link]' 
+    url: '[Link]'
   ...
   - icon: [Font awesome icon code]
     url: '[Link]'
@@ -124,7 +124,7 @@ modal: # Modal strings for l10n
 ```
 intro: # Master header text
 
-services: # Services section 
+services: # Services section
   heading: [Services Title]
   subheading: [Services Subtile]
   service: # List of services
@@ -160,7 +160,7 @@ about: # About section
   end3: [End bubble third line ]
 
 team:
-  heading: [Title] 
+  heading: [Title]
   subheading: [Subtitle]
   members: [List of members]
     - name: [Member's name]
@@ -168,7 +168,7 @@ team:
       img: [Member's image path]
       social-buttons: [List of Member's Social Media profiles]
         - icon: [Font Awasome icon code]
-          url: '[Link to Member's Social Media]' 
+          url: '[Link to Member's Social Media]'
         ...
         - icon: [Font Awasome icon code]
           url: '[Link to Member's Social Media]'
@@ -178,12 +178,12 @@ team:
       img: [Member's image path]
       social-buttons: [List of Member's Social Media profiles]
         - icon: [Font Awasome icon code]
-          url: '[Link to Member's Social Media]' 
+          url: '[Link to Member's Social Media]'
         ...
         - icon: [Font Awasome icon code]
           url: '[Link to Member's Social Media]'
 
-  text: [Text under members list] 
+  text: [Text under members list]
 
 clients: # List of clients logos and links
   - img: [Path to clients logo image]
@@ -194,7 +194,7 @@ clients: # List of clients logos and links
 
 contact: # Contact Section
   heading: [Translateble string]
-  ... 
+  ...
   btn: [Translatable string]
 
   js-url: '[Contact form target]'
@@ -224,7 +224,7 @@ The theme is setup just like a normal Jekyll site! To test the theme, run `bundl
 
 ## About
 
-jekyll-theme-startbootstrap-agency is an open source Jekyll theme based on [Start Bootstrap - Agency](https://github.com/BlackrockDigital/startbootstrap-agency) 
+jekyll-theme-startbootstrap-agency is an open source Jekyll theme based on [Start Bootstrap - Agency](https://github.com/BlackrockDigital/startbootstrap-agency)
 
 ```
 The MIT License (MIT)
