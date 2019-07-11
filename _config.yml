@@ -7,6 +7,7 @@ exclude:
   - Gemfile.lock
   - vendor/bundle
   - README.md
+  - Submodules
 
 
 timezone  : Asia/Tokyo
