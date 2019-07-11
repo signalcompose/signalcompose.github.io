@@ -8,6 +8,7 @@ exclude:
   - vendor/bundle
   - README.md
   - Submodules
+  - node_modules/* # for Netlify bug
 
 
 timezone  : Asia/Tokyo
@@ -23,6 +24,9 @@ collections:
     permlink : /:path
 
 # ---- build option ----
+
+repository: "signalcompose/signalcompose.github.io"
+
 
 kramdown :
   input : GFM
