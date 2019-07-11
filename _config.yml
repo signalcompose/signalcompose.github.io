@@ -24,6 +24,9 @@ collections:
 
 # ---- build option ----
 
+repository: "signalcompose/signalcompose.github.io"
+
+
 kramdown :
   input : GFM
 
