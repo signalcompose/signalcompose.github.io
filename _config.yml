@@ -1,0 +1,32 @@
+
+
+# ---- configuration ----
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle
+  - README.md
+  - Submodules
+
+
+timezone  : Asia/Tokyo
+encording : utf-8
+
+# ---- gems ----
+
+# ---- collections ----
+
+collections:
+  projects :
+    output : true
+    permlink : /:path
+
+# ---- build option ----
+
+kramdown :
+  input : GFM
+
+sass:
+  sass_dir : _scss
+  style    : compressed
