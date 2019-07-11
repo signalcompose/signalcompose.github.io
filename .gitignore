@@ -7,4 +7,3 @@ vendor/bundle
 Gemfile*
 
 .DS_Store
-Submodules/Bootstrap/
