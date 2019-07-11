@@ -5,7 +5,7 @@
 exclude:
   - Gemfile
   - Gemfile.lock
-  - vendor/bundle
+  - vendor
   - README.md
   - Submodules
   - node_modules/* # for Netlify bug
