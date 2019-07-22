@@ -2,8 +2,8 @@ _site
 .sass-cache
 .jekyll-metadata
 .ruby-version
-vendor
+vendor/bundle
 .bundle
-Gemfile*
+#Gemfile*
 
 .DS_Store

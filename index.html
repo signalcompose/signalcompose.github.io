@@ -1,50 +1,839 @@
----
-layout: base
-title : signalcompose
----
+<!DOCTYPE html>
+<html lang="ja">
 
-<div class="container" id="body">
-  <div class="row">
-    <div class="col-23 offset-1">
-      <div class="col-24">
-        <h2>
-          Signal Compose は、パートナーの専門的技術、知識、独創性によって駆動するクリエイティブチームです。<br />
-          音楽／映像／ソフトウェア／ハードウェアといった各々の感興から、世界をちょっとずつ豊かにしていきます。
-        </h2>
-        <p>
-          <li><a href="/about/">会社情報はこちら</a></li>
-          <li>お問い合わせは info[at]signalcompose.com まで。</li>
-        </p>
-      </div>
+<head>
 
-      <div class="col-24">
-        <h2> News </h2>
-      </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="favicon.ico">
 
+  <title>Signal Compose</title>
 
-      <div class="col-24">
-        <dl class="row">
-          {% for post in site.posts limit:5 %}
-          <dt class="col-12 col-md-6 col-lg-3"> {{ post.date | date_to_string }}</dt>
-          <dd class="col-12 col-md-18 col-lg-21"> <a href="{{ post.url }}">{{ post.title }}</a> </dd>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" >
 
-          {% endfor %}
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'><!-- イタリックやめたい、ggりの旅だ https://fonts.google.com/ -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="/css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+
+        <a class="navbar-brand　js-scroll-trigger" href="#page-top">
+          <!-- <img src="/logo.svg" width="240" height="80" alt=""> -->
+          <img src="/logo.svg" width="196" height="auto" alt="">
+        </a>
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Signal Compose</a> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">We can be</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Ability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
+    </div>
+  </nav>
 
-      <div class="col-24">
-        <h2> Projects </h2>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">
+          <!-- Do what we like, Get the world enriched. -->
+        </div>
+        <div class="intro-heading">
+          <!-- フォントこれで良いのかという疑問はある -->
+          Do what we like, </br>
+          Get the world enriched.
+        </div>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">More info</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">We can be...</h2>
+          <h3 class="section-subheading text-muted">
+            <!-- /-->
+          </h3>
+        </div>
       </div>
 
+      <div class="row text-center">
+        <div class="col-md-4" style="margin-bottom: 20px;">
+          <h2 class="service-heading">Maker</h2>
+          <span class="fa-stack fa-4x">
+            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+              <i class="far fa-lightbulb fa-stack-1x text-primary"></i>
+          </span>
+          <p><strong>ソフトウェア・ハードウェア製品の<br>開発およびコミュニティの創出</strong></p>
+          <!-- <p class="text-muted">Software, Hardware<br>Web service</p> -->
+        </div>
 
-      {% include card.html collections = site.projects prefix = "projects" %}
+        <div class="col-md-4" style="margin-bottom: 20px;">
+          <h2 class="service-heading">Label</h2>
+          <span class="fa-stack fa-4x">
+            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+            <i class="fas fa-compact-disc fa-stack-1x text-primary"></i>
+          </span>
+          <p><strong>音楽ジャンルを横断的に活動する<br>メディアプロダクション/レーベル</strong></p>
+          <!-- <p class="text-muted">Music Label/Production<br>Media Contents</p> -->
+        </div>
 
-      <div class="col-24">
-        <h2> Partner </h2>
+        <div class="col-md-4" style="margin-bottom: 20px;">
+          <h2 class="service-heading">School</h2>
+          <span class="fa-stack fa-4x">
+            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+            <!-- <i class="fas fa-university fa-stack-1x fa-inverse"></i> -->
+            <i class="fas fa-university fa-stack-1x text-primary"></i>
+          </span>
+          <p><strong>音楽とプログラミングを軸にした<br>リベラルアートのためのサブスクール</strong></p>
+          <!-- <p class="text-muted">Art Sub-School of<br>Music & Programming</p> -->
+        </div>
+
       </div>
 
-      {% include card.html collections = site.partners prefix = "partners" %}
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">
+            <br>
+            専門的技術・知識・独創性を持つメンバーによって駆動するクリエイティブチームです。<br>
+            音楽・映像・ソフトウェア・ハードウェアといった各々の感興から、<br>
+            世界をちょっとずつ豊かにしていきます。
+          </p>
+        </div>
+      </div>
 
     </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Ability</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="/img/portfolio/mrt_01_thumbnail.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Long Liver</h4>
+            <p class="text-muted">Music / Soundtrack</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="/img/portfolio/mrt_02_thumbnail.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Living Together</h4>
+            <p class="text-muted">Music / Soundtrack</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="/img/portfolio/SPP2019_thumbnail.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 style="font-size: 22px">サウンドパフォーマンス・<br>プラットフォーム2019</h4>
+            <p class="text-muted">Music / Session with AI</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="/img/portfolio/test_thum.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Max for Live Devices</h4>
+            <p class="text-muted">Software Product</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="/img/portfolio/musicmethod_thum.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 style="font-size: 22px">クリエイターのための<br>ポピュラー音楽理論</h4>
+            <p class="text-muted">Web Magazine</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="/img/portfolio/kato_01_thumbnail.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>TRUSTLESS LIFE</h4>
+            <p class="text-muted">The game of blockchain technology</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row" style="width: 82%; margin-left: auto; margin-right: auto">
+
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>どんな会社なのか</h4>
+            <h5 class="subheading">Signal Composeは、世界と関わるための新しい方法を創る会社です。</h5>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+                「世界と関わるための新しい方法」、なぜそれが必要なのでしょうか？<br>
+                シグナル・コンポーズのメンバーの大半はまだ若く、少子高齢化は更に加速し、シンギュラリティーの到来によってクリエイティブ職以外は消えていくとされる、そんな世界を生きていくことになります。<br>
+                私たちは大きな挑戦＝「世界と関わるための新しい方法」を創ることにしました。<br>
+                それこそが「社会に貢献する方法」であり「未来に残せるものの中で一番価値が高いもの」だと考えたからです。<br><br>
+              </p>
+          </div>
+        </div>
+
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>どうやって世界と関わるための新しい方法を創るのか</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">以下は、この会社をやるにあたりメンバーで話をした、世界と関わるための新しい方法を創るための「約束」です。</p>
+                <ul>
+                  <li style="margin-bottom: 10px;">このチームには上下関係がありません。<br>
+                    全員に平等に考え意見を言う権利と、それを行使する責任があります。</li>
+                  <li style="margin-bottom: 10px;">このチームでは何かを思いついたら「勝手にやっていい」です。<br>
+                    上下関係がない以上、人に確認する必要はありません。</li>
+                  <li style="margin-bottom: 10px;">このチームでは自他共に失敗することを認め、許容します。<br>
+                    失敗を恐れず責めず、早く結果を出し確認し、次に繋げます。</li>
+                </ul>
+
+            <p class="text-muted">この「約束」には一つだけ条件があります。それは「チームのゴールの認識を共通にすること」です。<br>
+              共通にするための手段は問いませんが「どういう認識を持っているのか」をきちんと表明し、確認することが必要です。<br>
+              ただし「約束」にもあるように、私たちは全員「勝手にやっていい」ので合議を取る必要はありません。<br><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4>新しい方法を創るためになにをやるのか </h4>
+            <!-- <h4 class="subheading"></h4> -->
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">
+              シグナル・コンポーズは次の3つを行います。
+            </p>
+              <ul type="none">
+                <li style="margin-bottom: 10px;">Maker … ソフトウェア・ハードウェア製品の開発およびコミュニティの創出</li>
+                <li style="margin-bottom: 10px;">Label … 音楽ジャンルを横断的に活動するメディアプロダクション/レーベル</li>
+                <li style="margin-bottom: 10px;">School … 音楽とプログラミングを軸にしたリベラルアートのためのサブスクール</li>
+              </ul>
+            <p class="text-muted"  style="margin-bottom: 30px;">これらは基本的にすべて「自分たちで企画し、作り、発信していくこと」が中心になります。もちろん世界を良くしていくために、自分たちだけではなく誰かと一緒に活動することもあります。<br>
+                <br>
+                ぜひ一緒に「世界と関わるための新しい方法」を創りましょう。
+            </p>
+            <p class="text-muted">
+              <h4 class="section-subheading text-muted" >会社概要は<a href="/about.html">こちら</a></h4>
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Our Team</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4" id="mrt">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/mrt.png" alt="">
+
+            <h4 >Ryo Morita</h4>
+            <p class="text-muted">Composer, Illustrator, Designer</p>
+
+            <h6>1995年生まれ、東京都出身。<br>
+            東京音楽大学 作曲 芸術音楽コース卒業。同大学音楽学課程修了。情報科学芸術大学院大学（IAMAS）に在学中。<br>
+            作曲を糀場富美子、西村朗、植田彰、喜久邦博に、指揮を三原明人に師事。<br>
+            大学在学中からガムランの演奏・研究を行い、現在はIAMASにてガムランの拡張に関する研究を進めている。</h6>
+
+            <ul class="list-inline">
+              <!-- <li class="list-inline-item">
+                <a href="https://www.instagram.com/morit4ryo/" target="_blank">
+                  <i class="fab fa-instagram fa-lg"></i> -->
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://morita-ryo.com/" target="_blank">morita-ryo.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/tsumagari.jpg" alt="">
+            <h4>Kota Tsumagari</h4>
+            <p class="text-muted">Sound Engineer, Programmer</p>
+
+            <h6>1995年生まれ、名古屋出身。<br>
+            名古屋学芸大学メディア造形学部映像メディア学科卒業。<br><br>
+            2018年現在IAMASにて、学部で培ったサウンドエンジニアスキルを活かしながら、ニューラルネットワークを用いたメディア表現を制作及び研究している。</h6>
+
+            <ul class="list-inline">
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/oishi.jpg" alt="">
+            <h4>Yoshitaka Oishi</h4>
+            <p class="text-muted">Sound Engineer, Programmer</p>
+
+            <h6>1990年生まれ。<br>
+            情報科学芸術大学院大学卒業。メディア表現修士(専門は可聴化)。<br>
+            Twitterの通信データを可聴化して鑑賞者と一緒に演奏する作品を制作。大学では作曲をカール・ストーンに師事。
+            <br>
+            ただの「道具」を作るのではなく、今まで利用されてなかった性質や特性を別の方面に応用できないか、今とは違う価値や視点を提供できないかと思考錯誤中。<br>
+            一部では leico という名で知られる。</h6>
+
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://leico.github.io/TechnicalNote/" target="_blank">leico.github.io/TechnicalNote/</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/umori.jpg" alt="">
+            <h4>H. Umori</h4>
+            <p class="text-muted">Circuit Designer</p>
+
+            <h6>10歳からギターを始め、90年代のオルタナティブロックに影響を受ける。以後、複数のバンドに所属する。サウンドを自らの手で構築するため、回路設計からアプローチする。</h6>
+            <!-- <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/rom4334" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/yamato.jpg" alt="">
+            <h4>Hiroshi Yamato</h4>
+            <p class="text-muted">Musician, Engineer, Researcher, Photographer</p>
+
+            <h6>ギタリスト、テナーサックス奏者<br><br>
+            IT会社、米国ベンンチャー企業をなどでの職務経験を経て、30代半ばにデザイン会社を起業。<br>
+            その後、IAMASに入学し三輪眞弘に師事し修士(メディア表現)を取得。<br>
+            また、ジャズ理論・テナーサックスを菊地成孔に、ギター演奏を小川銀次、市野元彦に師事する。
+            <br><br>
+            詳しい経歴は<a href ="http://hiroshiyamato.com/profile/" target="_blank">hiroshiyamato.com/profile/</a>にて。</h6>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/kato.jpg" alt="">
+            <h4>Akihiro Kato</h4>
+            <p class="text-muted">Front-end engineer</p>
+
+            <h6>1992年生まれ、愛知県出身。<br>
+            大学卒業後ウェブ制作会社を経て、情報科学芸術大学院大学（IAMAS）に進学、メディア表現専攻修了。<br><br>
+            ブロックチェーンが新しい社会を作る一つの可能性を持っていると考え、それを伝えるための表現としてボードゲーム「<a href="https://trustless.life/" target="_blank">TRUSTLESS LIFE</a>」を制作。<br>
+            <a href="https://hack.wired.jp/en/winners/" target="_blank">CREATIVE HACK AWARD 2018 SONY特別賞</a>を始め各方面からの評価を得る。2018年よりスタートバーンのウェブサービス・アプリケーションの制作に関わる。</h6>
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/kawamoto.png" alt="">
+            <h4>Yuji Kawamoto</h4>
+            <p class="text-muted">Contrabass & Electric Bass Player, Composer</p>
+
+            <h6>1978年生まれ。<br>
+              高校よりエレキベースを始め、立命館大学進学と同時にジャズ研に所属。ウッドベースを始める。 <br>
+              1999年、
+              山野楽器主催BIG BAND JAZZ CONTESTにて優秀賞全国三位を受賞。 2001年頃より都内近郊のジャズクラブ等で活動を始める。<br><br>
+              作編曲家として演劇の音楽制作も多く手がけ、
+              2017年には自己のグループによる全曲オリジナルの1stリーダーアルバム
+              <a href="http://yujikawamoto.com/album/%E5%B7%9D%E6%9C%AC%E6%82%A0%E8%87%AA%E3%80%8C%E7%99%BD%E9%9B%B2%E4%B8%80%E7%89%87%E5%8E%BB%E6%82%A0%E6%82%A0%E3%80%8D/" target="_blank">「白雲一片去悠悠」</a>をリリース。<br>
+              演奏・作編曲活動と並行して、芸術家の交流、発信・および教育の場を構築することにも力を注いでおり、
+              自らの主催で、広角な視野の音楽教育を目指して音楽教室を経営している。</h6>
+
+            <ul class="list-inline">
+              <li class="list-inline-item">
+              <a href="http://yujikawamoto.com/" target="_blank">yujikawamoto.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/img/team/ysjm.jpeg" alt="">
+            <h4>Tomohito Yoshijima</h4>
+            <p class="text-muted">Drum Player, Composer, Sound Engineer</p>
+            <h6>早稲田大学在学時からドラムを始め、池長一美氏に師事。卒業後、洗足学園音楽大学jazz科に入学。在学時よりプロ活動を開始。<br>
+                ゴダイゴのギタリスト浅野孝巳氏をはじめ、ベース奏者水谷浩章氏など、ジャンルを問わず、様々な音楽家と共演。<br>
+                レコーディング作品も多数。パナソニック"暮らしのエコナビ"、小学生打楽器アンサンブル曲"little alchemists"で金賞獲得など。<br>
+                ジャズを主軸として、ロック、ポップス、フリーインプロヴィゼイション、劇伴、吹奏楽にいたるまで、ジャンルを超えて演奏。<br>
+                微音、弱音を得意とし、振り幅の大きいダイナミクスを駆使して独特なうねりを生み出す音の旅人。</h6>
+
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/333lives" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <!-- <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="/img/logos/envato.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase" style="margin-bottom: 20px">CONTACT</h2>
+          <h5 class="section-subheading text-muted">お問い合わせは<a href=mailto:info&#64;signalcompose.com>こちら</a></h5>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Signal Compose 2019</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/signalcompose" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/signalcompose" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <!-- <li class="list-inline-item"><a href="#">プライバシーポリシー</a></li> -->
+            <!-- <li class="list-inline-item"><a href="#">特定商取引法に基づく表記</a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body" style="font-size: 90%">
+                <h2 >Long Liver</h2>
+                <p class="item-intro text-muted">Music / Soundtrack</p>
+
+                <!-- 16:9 aspect ratio --><!-- 4:3のときはここと下の16by9を変えるだけ -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eonYM_FYR80?controls=0&amp;start=47" style="margin-bottom: 10px"></iframe>
+                </div>
+                <!-- <img class="img-fluid d-block mx-auto" src="..." alt=""> これを抜くとmarginがなくなってしまうがcssの治し方がわからない -->
+
+                <p class="" style="text-align: left;">尾焼津 早織さんによる、特殊なコマ割りとカメラワークに着目したモーションコミック作品「宇宙人、ひとり。」の音楽を担当しました。本作品は第24回学生CGコンテスト アート部門 萩原評価員賞を受賞しました。</p>
+                <ul class="list-inline">
+                  <li>Date: August 2018</li>
+                  <li>Work: Ryo MORITA<li>
+                  <li>Client: <a href="https://oyaizu-saori.tumblr.com/" target="_blank">Saori OYAIZU</a></li>
+                  <li>Category: Music / Soundtrack</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body" style="font-size: 90%">
+
+                <h2>Living Together</h2>
+                <p class="item-intro text-muted">Music / Soundtrack</p>
+                <img class="img-fluid d-block mx-auto" src="/img/portfolio/mrt_02_full.png" alt="">
+                <p class="" style="text-align: left;">Reina Akamatsu監督による、ドキュメンタリー作品「Living Together」に音楽を提供しました。映像は<a href="https://vimeo.com/335012815" target="_blank">こちら</a>からご覧いただけます（pass: 1039.5）。</p>
+                <ul class="list-inline">
+                  <li>Date: May 2019</li>
+                  <li>Work: Ryo MORITA<li>
+                  <li>Client: Reina Akamatsu</li>
+                  <li>Category: Music / Soundtrack</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body" style="font-size: 90%">
+
+                <h2 class="text-uppercase"style="font-size: 30px">サウンドパフォーマンス・<br>プラットフォーム2019</h2>
+                <p class="item-intro text-muted">Music Session with AI</p>
+                <img class="img-fluid d-block mx-auto" src="/img/portfolio/test2_full.jpeg" alt="">
+                <p class="" style="text-align: left;">人間と AI 双方が、相手の演奏を即興的に解釈して共演するパフォーマンス作品を制作。
+                  偶然性と一回性を重んじるパフォーマンスの場で、音楽を共創する相手として AI を捉えることを試みました。<br>
+                  AIには、ピアノとギターのデュオを学習した Recurrent Neural Network を採用し、
+                  相手の演奏に応じて MIDI データのリアルタイムに生成を行っています。そのMIDIデータによって、自動ピアノに改造されたトイピアノを AI 自身が演奏しています。</p>
+                <ul class="list-inline">
+                  <li>Date: February 2019</li>
+                  <li>Work: Yoshitaka OISHI, Kota TSUMAGARI, Hiroshi YAMATO</li>
+                  <li>Category: Music / Session with AI</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body" style="font-size: 90%">
+
+                <h2 class="text-uppercase">Max for Live Devices</h2>
+                <p class="item-intro text-muted">Software Product</p>
+                <img class="img-fluid d-block mx-auto" src="/img/portfolio/test_thum.png" alt="">
+                <p class="" style="text-align: left;">Ableton Live用ソフトウェアとして、Max for Liveをつかったオリジナルのデバイスを制作しています。
+                  EQなどの実用的なものから、未知のリズムを生みだすような一風変ったものまで幅拾いデバイスを提供しています。<br>
+                  今後はユーザーとコミュニケーションするプラットフォームを提供し、リクエストやカスタマイズに応えたりするようなサービスに展開していく予定です。
+                  まずは第一弾として、全てのデバイスをまとめたSuiteの提供を来月を目処に始めます。御期待ください!!</p>
+                <ul class="list-inline">
+                  <li>Work: Yoshitaka OISHI, Hiroshi YAMATO, Ryo MORITA</li>
+                  <li>Category: Software Product</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body" style="font-size: 90%">
+
+                <h2 class="text-uppercase" style="font-size: 34px">クリエイターのための<br>ポピュラー音楽理論</h2>
+                <p class="item-intro text-muted">Web Magazine</p>
+                <img class="img-fluid d-block mx-auto" src="/img/portfolio/musicmethod_full_test.png" alt="">
+                <p class="" style="text-align: left;">ウェブマガジン「クリエイターのためのポピュラー音楽理論」をnoteで開始しました。
+                  現代のポピュラー音楽の基礎知識とも言える「バークリーメソッド」を「解像度は荒め」でなるべく簡易に、覚えることを少なく、理屈でわかるように進めていきます。<br>
+                  わからないところなどは一緒に学んでいければと思っていますし、またクリエティブに活用する方法、などにもつなげていけるようにしたいと考えています。</p>
+                <ul class="list-inline">
+                  <li>Link: <a href="https://note.mu/dropcontrol/m/m6de703503730" target="_blank">クリエイターのためのポピュラー音楽理論</a></li>
+                  <li>Work: Hiroshi YAMATO, Ryo MORITA</li>
+                  <li>Category: Web Magazine</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body" style="font-size: 90%">
+                <h2 class="text-uppercase">TRUSTLESS LIFE</h2>
+                <p class="item-intro text-muted">The game of blockchain technology</p>
+                <img class="img-fluid d-block mx-auto" src="/img/portfolio/kato_01_full.png" alt="">
+                <p class="" style="text-align: left;">ボードゲーム「TRUSTLESS LIFE」は、現在仮想通貨として広がりつつあるブロックチェーンの可能性を一つの世界観の提示を通して問う作品。<br>
+                  プレイヤーは未来の経済特区で信用をブロックチェーンに記録する社会を体験し、その可能性と課題を想像する。<a href="https://trustless.life" target="_blank">https://trustless.life</a></p>
+                <ul class="list-inline">
+                  <li>Work: Akihiro KATO<li>
+                  <li>Category: Game</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9fa433696a.js"></script>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="/vendor/jquery/jquery.min.js"></script> -->
+  <script src="/js/jquery/jquery.min.js"> </script>
+
+
+  <script src="/js/bootstrap/bootstrap.bundle.min.js"> </script>
+
+  <!-- Plugin JavaScript -->
+  <!-- <script src="/vendor/jquery-easing/jquery.easing.min.js"></script> -->
+  <script  src="/js/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="/js/jqBootstrapValidation.js"></script>
+  <script src="/js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/js/agency.min.js"></script>
+
+</body>
+
+</html>
