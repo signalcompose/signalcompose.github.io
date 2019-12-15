@@ -34,3 +34,6 @@ kramdown :
 sass:
   sass_dir : _scss
   style    : compressed
+
+# ---- debug ----
+#github: [metadata]
